@@ -258,74 +258,114 @@
 
 
   
-  @media (max-width: 768px) {
-    .slide {
-      width: 90%;
-      height: auto;
-      padding: 20px;
-      border-radius: 10px;
-    }
-  
-    h1 {
-      font-size: 28px;
-    }
-  
-    h1::after {
-      width: 40px;
-    }
-  
-    h2 {
-      font-size: 20px;
-    }
-  
-    p, ul {
-      font-size: 14px;
-    }
-  
-    ul li {
-      padding-left: 25px;
-    }
-  
-    .logo {
-      width: 120px;
-    }
-  
-    .screenshot {
-      max-width: 200px;
-      max-height: 150px;
-    }
-  
-    .feature-item {
-      max-width: 200px;
-    }
-  
-    .feature-item img {
-      max-width: 150px;
-      max-height: 100px;
-    }
-  
-    table {
-      font-size: 14px;
-    }
-  
-    .button {
-      padding: 10px 20px;
-    }
-  
-    .navigation {
-      bottom: 20px;
-      padding: 8px;
-    }
-  
-    .dot {
-      width: 12px;
-      height: 12px;
-      margin: 0 5px;
-    }
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+    margin-top: -50px;
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .feature-item i {
-    font-size: 24px;
-    color: #007bff;
-    margin-bottom: 10px;
+  .slide {
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: none;
   }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  p, ul, ul li, .feature-item p {
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+
+  ul {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+
+  ul li {
+    padding-left: 25px;
+  }
+
+  .logo {
+    width: 100px;
+    margin: 10px auto;
+  }
+
+  .screenshot {
+    width: 100%;
+    max-height: 180px;
+    margin: 15px auto;
+  }
+
+  .feature-gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .feature-item {
+    max-width: 100%;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .feature-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .button {
+    padding: 10px 18px;
+    font-size: 13px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  table {
+    font-size: 13px;
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  th, td {
+    padding: 10px 8px;
+    white-space: nowrap;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 11px;
+    height: 11px;
+    margin: 4px;
+  }
+
+  #slide14 {
+    padding: 20px;
+    font-size: 13.5px;
+    min-height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+  }
+}
